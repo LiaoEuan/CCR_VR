@@ -11,10 +11,8 @@ Visual Reprogramming, Closed-loop Correction Reprogramming (CCR), PID, Proportio
 Visual Reprogramming (VR) adapts pre-trained models to new tasks through pixel-level attention modulation without parameter modification. While existing methods achieve competent performance on basic classification, they dispersed attention in critical discriminative regions for fine-grained tasks. Inspired by PID control theory, we propose Closed-loop Correction Reprogramming (CCR) that integrates proportional feedback. Concretely, the framework comprises dual streams: a Foundation Flow for initial attention patterns and a Correction Flow that iteratively refines them with residual feedback, alternating between both. A Proportional Adjustment Controller (PAC) dynamically calibrates perturbation intensity via learnable error mapping--enhancing the correction flow's contribution in response to increased foundational stream errors, otherwise maintaining the foundation's dependable attributes. Experiments on 11 benchmarks demonstrate CCR achieves up to 10.8% accuracy gain with only 0.64% parameter increase, attaining 8.62% average improvement on five challenging fine-grained datasets (GTSRB, FLOWERS102, DTD, UCF101, FOOD101). The framework offers enhanced visual cues that improve discrimination in fine-grained classification.
 
 **Method:**
-Comparison between existing methods (a) and our method (b). 
-Previous padding-based reprogramming adds zeros around the target image, while resizing-based reprogramming adjusts image dimensions to fit the required input size. 
-Both methods use a pre-determined *shared* mask to indicate the valid location of pattern $\delta$. Our method, on the other hand, takes a more dynamic and tailored approach. 
-We resize each target image and apply a different three-channel mask accordingly, driven by a lightweight model $f_{\rm mask}$ and an interpolation up-scaling module, allowing for more variability in individual samples.
+Current visual reprogramming algorithms often encounter the ”fog effect” in handling downstream fine-grained tasks, where the model struggles to clearly identify the key detailed features of objects. This blurring phenomenon significantly affects the model’s performance in fine-grained classification. To address this issue, we propose Closed-loop Correction Reprogramming, which combines the closed-loop feedback mechanism and proportional control principles from classical control theory.
+
 
 
 ## Dataset
