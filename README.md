@@ -41,4 +41,4 @@ This repo is built upon these previous works:
 
 - [lukemelas/PyTorch-Pretrained-ViT](https://github.com/lukemelas/PyTorch-Pretrained-ViT)
 - [OPTML-Group/ILM-VP](https://github.com/OPTML-Group/ILM-VP)
-- [SMM](https://github.com/tmlr-group/SMM/tree/main)
+- [tmlr-group/SMM](https://github.com/tmlr-group/SMM/tree/main)
