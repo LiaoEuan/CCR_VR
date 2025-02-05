@@ -1,7 +1,7 @@
 # PID-Inspired Continuous Correction for Visual Reprogramming
 
 This repository is the official PyTorch implementation of the **ICML2025** paper:
-[Sample-specific Masks for Visual Reprogramming-based Prompting],
+[PID-Inspired Continuous Correction for Visual Reprogramming],
 authored by Anonymous Authors.
 
 **Key Words:**
