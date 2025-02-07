@@ -18,8 +18,6 @@ The **Closed-loop Correction Reprogramming (CCR)** model enhances pre-trained mo
 
 A key component, the **Proportional Adjustment Controller (PAC)**, estimates the perturbation magnitude during testing without needing ground-truth labels. PAC dynamically adjusts the influence of the two flows: it strengthens the Correction Flow when the Foundation Flow’s errors exceed a threshold, and preserves reliable features when errors are small.
 
-Based on **PID control theory**, PAC optimizes attention by adjusting the flow based on error magnitude. This closed-loop mechanism improves both error suppression and feature enhancement.
-
 <p align="center">
   <img src="https://github.com/LiaoEuan/CCR_VR/blob/main/pic/model.png?raw=true" width=100%/>
 </p>
