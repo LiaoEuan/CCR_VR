@@ -39,11 +39,14 @@ Then put all the download datasets in `/dataset/`
   
 ## Training
 
-- For ViT-based pretrained model
+To train the model, simply run the **CCR.ipynb** notebook. Modify the following section in the notebook to adjust the model and dataset settings:
 
-        python instancewise_vp.py --dataset cifar10 --network ViT_B32 --seed 0
-
-
+### Model and Dataset Configuration
+```python
+class Args:
+    network = "resnet18"  # Choose from ["resnet18", "resnet50", "ViT_B32"]
+    dataset = "food101"   # Choose from ["cifar10", "cifar100", "gtsrb", "svhn", "food101", "eurosat", "sun397", "UCF101", "flowers102", "DTD", "oxfordpets"]
+```
 ## Visual result
 <p align="center">
   <img src="https://github.com/LiaoEuan/CCR_VR/blob/main/pic/visual result.png?raw=true" width=100%/>
