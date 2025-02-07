@@ -47,6 +47,15 @@ class Args:
     network = "resnet18"  # Choose from ["resnet18", "resnet50", "ViT_B32"]
     dataset = "flowers102"   # Choose from ["cifar10", "cifar100", "gtsrb", "svhn", "food101", "eurosat", "sun397", "UCF101", "flowers102", "DTD", "oxfordpets"]
 ```
+### Pre-trained Models
+The **model_pth** directory should contain the following pre-trained models:
+- **resnet18**
+- **resnet50**
+- **ViT_B32**
+
+### Training Results
+The final training results will be saved in the **results** folder, allowing easy access to evaluate and analyze the outcomes of your training.
+
 ## Visual result
 <p align="center">
   <img src="https://github.com/LiaoEuan/CCR_VR/blob/main/pic/visual result.png?raw=true" width=100%/>
