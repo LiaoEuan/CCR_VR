@@ -11,7 +11,14 @@ Visual Reprogramming, Closed-loop Correction Reprogramming (CCR), PID, Proportio
 Visual Reprogramming (VR) adapts pre-trained models to new tasks through pixel-level attention modulation without parameter modification. While existing methods achieve competent performance on basic classification, they dispersed attention in critical discriminative regions for fine-grained tasks. Inspired by PID control theory, we propose Closed-loop Correction Reprogramming (CCR) that integrates proportional feedback. Concretely, the framework comprises dual streams: a Foundation Flow for initial attention patterns and a Correction Flow that iteratively refines them with residual feedback, alternating between both. A Proportional Adjustment Controller (PAC) dynamically calibrates perturbation intensity via learnable error mapping--enhancing the correction flow's contribution in response to increased foundational stream errors, otherwise maintaining the foundation's dependable attributes. Experiments on 11 benchmarks demonstrate CCR achieves up to 10.8% accuracy gain with only 0.64% parameter increase, attaining 8.62% average improvement on five challenging fine-grained datasets (GTSRB, FLOWERS102, DTD, UCF101, FOOD101). The framework offers enhanced visual cues that improve discrimination in fine-grained classification.
 
 **Method:**
-Current visual reprogramming algorithms often encounter the ”fog effect” in handling downstream fine-grained tasks, where the model struggles to clearly identify the key detailed features of objects. This blurring phenomenon significantly affects the model’s performance in fine-grained classification. To address this issue, we propose Closed-loop Correction Reprogramming, which combines the closed-loop feedback mechanism and proportional control principles from classical control theory.
+The **Closed-loop Correction Reprogramming (CCR)** model enhances pre-trained models for fine-grained classification tasks using **Visual Reprogramming (VR)**. It employs a **dual-stream architecture** consisting of **Foundation Flow** and **Correction Flow** to dynamically refine attention maps.
+
+- **Foundation Flow** generates initial perturbation patterns for coarse adaptation.
+- **Correction Flow** iteratively refines these patterns based on residual feedback from the Foundation Flow, improving the attention distribution for fine-grained tasks.
+
+A key component, the **Proportional Adjustment Controller (PAC)**, estimates the perturbation magnitude during testing without needing ground-truth labels. PAC dynamically adjusts the influence of the two flows: it strengthens the Correction Flow when the Foundation Flow’s errors exceed a threshold, and preserves reliable features when errors are small.
+
+Based on **PID control theory**, PAC optimizes attention by adjusting the flow based on error magnitude. This closed-loop mechanism improves both error suppression and feature enhancement.
 
 <p align="center">
   <img src="https://github.com/LiaoEuan/CCR_VR/blob/main/pic/model.png?raw=true" width=100%/>
