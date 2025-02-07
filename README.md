@@ -19,7 +19,7 @@ Current visual reprogramming algorithms often encounter the ”fog effect” in 
 - For CIFAR10, CIFAR100, GTSRB, SVHN, simply run our code and use [TorchVision](https://pytorch.org/vision/0.15/datasets.html) to download them automatically.
 - For other datasets, follow [this paper](https://github.com/OPTML-Group/ILM-VP) to prepare them.
 
-Put all the download datasets in `/dataset/`
+Then put all the download datasets in `/dataset/`
 
 ## Environment
 
