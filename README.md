@@ -13,6 +13,9 @@ Visual Reprogramming (VR) adapts pre-trained models to new tasks through pixel-l
 **Method:**
 Current visual reprogramming algorithms often encounter the ”fog effect” in handling downstream fine-grained tasks, where the model struggles to clearly identify the key detailed features of objects. This blurring phenomenon significantly affects the model’s performance in fine-grained classification. To address this issue, we propose Closed-loop Correction Reprogramming, which combines the closed-loop feedback mechanism and proportional control principles from classical control theory.
 
+<p align="center">
+  <img src="https://github.com/LiaoEuan/CCR_VR/blob/main/pic/model.png?raw=true" width=100%/>
+</p>
 
 
 ## Dataset
