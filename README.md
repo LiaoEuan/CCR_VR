@@ -38,6 +38,14 @@ Then put all the download datasets in `/dataset/`
 
         python instancewise_vp.py --dataset cifar10 --network ViT_B32 --seed 0
 
+
+## Visual result
+<p align="center">
+  <img src="https://github.com/LiaoEuan/CCR_VR/blob/main/pic/visual result.png?raw=true" width=100%/>
+</p>
+
+Visual results of trained VR on the Flowers102 dataset.ResNet-18 is used as the pre-trained model as an example.
+
 ## Acknowledgements
 
 This repo is built upon these previous works:
