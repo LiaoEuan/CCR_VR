@@ -34,9 +34,9 @@ Then put all the download datasets in `/dataset/`
 ## Environment
 
 - Python (3.10.0)
-- PyTorch (2.0.1) 
-- TorchVision (0.15.2)
-        
+- PyTorch (2.5.1)+cu124
+- TorchVision (0.20.1)+cu124
+
         pip install -r requirements.txt
   
 ## Training
