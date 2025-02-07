@@ -45,7 +45,7 @@ To train the model, simply run the **CCR.ipynb** notebook. Modify the following 
 ```python
 class Args:
     network = "resnet18"  # Choose from ["resnet18", "resnet50", "ViT_B32"]
-    dataset = "food101"   # Choose from ["cifar10", "cifar100", "gtsrb", "svhn", "food101", "eurosat", "sun397", "UCF101", "flowers102", "DTD", "oxfordpets"]
+    dataset = "flowers102"   # Choose from ["cifar10", "cifar100", "gtsrb", "svhn", "food101", "eurosat", "sun397", "UCF101", "flowers102", "DTD", "oxfordpets"]
 ```
 ## Visual result
 <p align="center">
